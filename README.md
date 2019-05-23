@@ -20,7 +20,7 @@ The PC hooked up to the TV downstairs has the following commands:
   - `restart` - an alias for `stop && radiate`
 
 If you have SSH access to the PC, you can use this syntax to quickly restart the radiator:
-```
+```bash
 ssh pkc@10.59.1.119 "DISPLAY=:0 nohup restart > /dev/null 2>&1 &"
 ```
 Feel free to replace `restart` with `radiate` or `stop` as necessary!
