@@ -11,6 +11,7 @@ done
 shopt -u nullglob
 shopt -u nocaseglob
 
+xdotool mousemove --screen 0 1500 400
 firefox --no-remote "${THINGS[@]/#/}" &
 xdotool search --sync --onlyvisible --class "Firefox" windowactivate key F11
 xdotool mousemove --screen 0 0 0
