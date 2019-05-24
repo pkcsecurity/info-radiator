@@ -1,6 +1,6 @@
 #!/bin/bash
 
-THINGS=(https://give.imb.org https://pkc.io)
+THINGS=(https://pkc.io https://give.imb.org https://pkc.io/blog)
 
 shopt -s nullglob
 shopt -s nocaseglob
