@@ -1,6 +1,6 @@
 PKC Information Radiator
 =====
-We do cool stuff! Let's share it with each other!
+We do cool stuff! Let's share it with each other! This repo is for the `launch-radiator.sh` script, which runs on the PC hooked up to the TV downstairs.
 
 ## How to add an image/screenshot
 Just drop it in [the `images` folder](https://github.com/jming422/info-radiator/tree/master/images), and that's it! The next time the `launch-radiator.sh` script is started, the images will be loaded into Firefox to be cycled through.
