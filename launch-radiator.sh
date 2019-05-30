@@ -4,7 +4,7 @@
 things=(https://pkc.io https://give.imb.org https://pkc.io/blog https://vr-tic-tac-toe.herokuapp.com)
 
 # Grab files from the images directory as well
-shopt n-s nullglob
+shopt -s nullglob
 shopt -s nocaseglob
 for file in /home/pkc/info-radiator/images/*.{png,jpg,jpeg,gif}
 do
