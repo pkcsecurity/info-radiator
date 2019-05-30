@@ -19,7 +19,9 @@ The PC hooked up to the TV downstairs has the following commands:
   - `stop` - kills any existing instances of any radiator scripts and Firefox
   - `restart` - an alias for `stop && radiate`
 
-If you have SSH access to the PC, you can use this syntax to quickly restart the radiator:
+If you have SSH access to the PC, once you get to the bash prompt, you can simply enter any of those three commands!
+
+You can also use this syntax to quickly restart the radiator without opening a shell prompt, assuming your identity key is loaded into `ssh-agent`:
 ```bash
 ssh pkc@10.59.1.119 "DISPLAY=:0 nohup restart > /dev/null 2>&1 &"
 ```
@@ -27,4 +29,4 @@ Feel free to replace `restart` with `radiate` or `stop` as necessary!
 
 The PC has also been configured to automatically run `radiate` on system boot. Note: if you quit the script at any point, be sure all instances of Firefox are closed too before running the script again.
 
-If you'd like SSH access to the PC, shoot a Slack message to Jonathan and he'll get you in.
+If you'd like SSH access to the PC, shoot a Slack message to Jonathan and he'll help get you set up!
