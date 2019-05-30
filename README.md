@@ -8,10 +8,10 @@ Just drop it in [the `images` folder](https://github.com/jming422/info-radiator/
 **Note:** Images must be either png, jpg, or gif.
 
 ## How to add a webpage/app
-Edit [`launch-radiator.sh`](https://github.com/jming422/info-radiator/blob/master/launch-radiator.sh), and add your URL of choice to the initial value of the `THINGS` array at the top. Entries are space-separated, no quotes required.
+Edit [`launch-radiator.sh`](https://github.com/jming422/info-radiator/blob/master/launch-radiator.sh), and add your URL of choice to the initial value of the `things` array at the top. Entries are space-separated, no quotes required.
 
 ## What else can it do?
-Since this app is just automating Firefox via keystrokes, it can display anything Firefox can. You can add any resource URI that Firefox is capable of displaying to `THINGS`, and it should "just work."
+Since this app is just automating Firefox via keystrokes, it can display anything Firefox can. You can add any resource URI that Firefox is capable of displaying to `things`, and it should "just work."
 
 ## Details about the Radiator PC
 The PC hooked up to the TV downstairs has the following commands:
