@@ -1,7 +1,11 @@
 #!/bin/bash
 
 # Start with URLs to open
-things=(https://pkc.io https://give.imb.org https://pkc.io/blog https://vr-tic-tac-toe.herokuapp.com)
+things=("https://pkc.io"
+	"https://give.imb.org"
+	"https://pkc.io/blog"
+	"https://vr-tic-tac-toe.herokuapp.com"
+	"https://www.hostedgraphite.com/6abb8f84/71fedf68-002a-4766-ba8e-74621882733e/grafana/playlists/play/3?inactive")
 
 # Grab files from the images directory as well
 shopt -s nullglob
