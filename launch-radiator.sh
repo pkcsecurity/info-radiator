@@ -6,7 +6,7 @@ things=(https://pkc.io https://give.imb.org https://pkc.io/blog https://vr-tic-t
 # Grab files from the images directory as well
 shopt -s nullglob
 shopt -s nocaseglob
-for file in /home/pkc/info-radiator/images/*.{png,jpg,jpeg,gif}
+for file in /home/pkc/info-radiator/images/*.{png,jpg,jpeg,gif,pdf}
 do
     things+=("file://$file")
 done
