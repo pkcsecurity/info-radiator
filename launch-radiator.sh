@@ -3,6 +3,7 @@
 # Start with URLs to open
 things=("https://pkc.io"
 	"https://give.imb.org"
+	"https://www.imb.org/give/projects/#give_projects_body"
 	"https://pkc.io/blog"
 	"https://vr-tic-tac-toe.herokuapp.com"
 	"https://www.hostedgraphite.com/6abb8f84/71fedf68-002a-4766-ba8e-74621882733e/grafana/playlists/play/3?inactive")
@@ -34,5 +35,5 @@ xdotool mousemove --screen 0 0 0
 
 while true
 do
-    xdotool key ctrl+Next sleep 10
+    xdotool key ctrl+Next sleep 15
 done
