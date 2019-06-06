@@ -11,7 +11,7 @@ Just drop it in [the `images` folder](https://github.com/jming422/info-radiator/
 Edit [`launch-radiator.sh`](https://github.com/jming422/info-radiator/blob/master/launch-radiator.sh), and add your URL of choice to the initial value of the `things` array at the top. Entries are space-separated, no quotes required.
 
 ## How to restart/start/stop the radiator
-Visit 10.59.1.119:8080 in your browser!
+Visit [http://10.59.1.119:8080](http://10.59.1.119:8080) in your browser!
 
 ## What else can it do?
 Since this app is just automating Firefox via keystrokes, it can display anything Firefox can. You can add any resource URI that Firefox is capable of displaying to `things`, and it should "just work."
