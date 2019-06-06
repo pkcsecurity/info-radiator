@@ -1,0 +1,27 @@
+{
+  "name": "info-radiator-control",
+  "version": "0.0.1",
+  "description": "A simple control panel for the information radiator PC",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Tests passed!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkcsecurity/info-radiator.git"
+  },
+  "author": "Jonathan Ming",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pkcsecurity/info-radiator/issues"
+  },
+  "homepage": "https://github.com/pkcsecurity/info-radiator#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "tachyons": "^4.11.1"
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Information Radiator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+    <script>
+     function makeIt(action) {
+       if (action === "start" || action === "restart" || action === "stop") {
+	 const req = new XMLHttpRequest();
+	 req.open("POST", `/${actgion}`);
+	 req.send();
+       }
+     }
+    </script>
+  </head>
+  <body>
+    <div class="w-100 vh-100 flex flex-column justify-center overflow-hidden bg-washed-blue avenir">
+      <div class="tc">
+        <a class="f1 grow no-underline br-pill ph4 pv3 mh3 dib white bg-green" href="#" onclick="makeIt('start')">Start</a>
+	<a class="f1 grow no-underline br-pill ph4 pv3 mh3 dib white bg-blue" href="#" onclick="makeIt('restart')">Restart</a>
+	<a class="f1 grow no-underline br-pill ph4 pv3 mh3 dib white bg-red" href="#" onclick="makeIt('stop')">Stop</a>
+      </div>
+    </div>
+  </body>
+</html>
