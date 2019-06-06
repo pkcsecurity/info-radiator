@@ -8,7 +8,7 @@
      function makeIt(action) {
        if (action === "start" || action === "restart" || action === "stop") {
 	 const req = new XMLHttpRequest();
-	 req.open("POST", `/${actgion}`);
+	 req.open("POST", `/${action}`);
 	 req.send();
        }
      }
