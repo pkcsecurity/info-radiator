@@ -46,4 +46,4 @@ app.get("/", (_, res) => {
   res.render("index");
 });
 
-app.listen(process.env.PORT || 80);
+app.listen(process.env.PORT || 8080, "10.59.1.119");
