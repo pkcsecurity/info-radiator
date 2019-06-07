@@ -11,7 +11,9 @@ function throttle(f, timeout) {
     this.lastCall = Date.now();
     if (prevCall === undefined || this.lastCall - prevCall > timeout) {
       f(args);
+      return true;
     }
+    return false;
   };
 }
 
@@ -30,20 +32,22 @@ async function doIt(action) {
 const notSoFast = throttle(doIt, 5000); // doIt may be called at most once every 5 seconds
 
 app.post("/start", (_, res) => {
-  notSoFast("radiate");
-  res.status(204).end();
+  const ranIt = notSoFast("radiate");
+  res.status(ranIt ? 204 : 429).end();
 });
 app.post("/restart", (_, res) => {
-  notSoFast("restart");
-  res.status(204).end();
+  const ranIt = notSoFast("restart");
+  res.status(ranIt ? 204 : 429).end();
 });
 app.post("/stop", (_, res) => {
-  notSoFast("stop");
-  res.status(204).end();
+  const ranIt = notSoFast("stop");
+  res.status(ranIt ? 204 : 429).end();
 });
 
 app.get("/", (_, res) => {
   res.render("index");
 });
 
-app.listen(process.env.PORT || 8080, "10.59.1.119");
+app.listen(
+  process.env.PORT || 8080 // , "10.59.1.119"
+);

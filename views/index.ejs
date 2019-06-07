@@ -5,21 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
     <script>
+     function showPopup(text) {
+       const e = document.getElementById("popup");
+       e.textContent = text;
+       switch (text) {
+	 case "✓":
+	   e.style.color = "green";
+	   break;
+	 case "×":
+	   e.style.color = "red";
+	   break;
+	 case "⏱":
+	   e.style.color = null;
+	   break;
+       }
+       e.classList.add("vis");
+       setTimeout(() => e.classList.remove("vis"), 2000);
+     }
+
      function makeIt(action) {
        if (action === "start" || action === "restart" || action === "stop") {
 	 const req = new XMLHttpRequest();
 	 req.open("POST", `/${action}`);
+	 req.onreadystatechange = function() {
+	   if (this.readyState === XMLHttpRequest.DONE) {
+	     let popup = "×";
+	     switch (this.status) {
+	       case 204:
+		 popup = "✓";
+		 break;
+	       case 429:
+		 popup = "⏱";
+		 break;
+	     }
+	     showPopup(popup);
+	   }
+	 }
 	 req.send();
        }
      }
     </script>
+    <style>
+     .hid {
+       visibility: hidden;
+       opacity: 0;
+       transition: visibility 0s 3s, opacity 3s ease-in;
+     }
+     .vis {
+       visibility: visible;
+       opacity: 1;
+       transition: opacity 0s;
+     }
+    </style>
   </head>
   <body>
     <div class="w-100 vh-100 flex flex-column justify-center overflow-hidden bg-washed-blue avenir">
       <div class="tc">
-        <!-- <a class="f1 grow no-underline br-pill ph4 pv3 mh3 dib white bg-green" href="#" onclick="makeIt('start')">Start</a> -->
-	<a class="f1 grow no-underline br-pill ph4 pv3 mh3 dib white bg-blue" href="#" onclick="makeIt('restart')">Restart</a>
-	<a class="f1 grow no-underline br-pill ph4 pv3 mh3 dib white bg-red" href="#" onclick="makeIt('stop')">Stop</a>
+	<h1 class="f-headline mt0 black hid" id="popup">✓</h1>
+      </div>
+      <div class="tc">
+	<a class="w5 f1 grow no-underline br-pill ph4 pv3 mh3 dib white bg-blue" href="#" onclick="makeIt('restart')">Restart</a>
+	<a class="w5 f1 grow no-underline br-pill ph4 pv3 mh3 dib white bg-red" href="#" onclick="makeIt('stop')">Stop</a>
       </div>
     </div>
   </body>
