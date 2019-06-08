@@ -30,7 +30,7 @@ ssh pkc@10.59.1.119 "DISPLAY=:0 nohup restart > /dev/null 2>&1 &"
 ```
 Feel free to replace `restart` with `radiate` or `stop` as necessary!
 
-The PC has also been configured to automatically run `radiate` on system boot. Note: if you quit the script at any point, be sure all instances of Firefox are closed too before running the script again.
+The PC has also been configured to automatically run `radiate` and `npm start` on system boot. Note: if you quit the script at any point, be sure all instances of Firefox are closed too before running the script again (using the `restart` command ensures this).
 
 If you'd like SSH access to the PC, shoot a Slack message to Jonathan and he'll help get you set up!
 
