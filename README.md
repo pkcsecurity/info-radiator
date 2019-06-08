@@ -38,3 +38,4 @@ If you'd like SSH access to the PC, shoot a Slack message to Jonathan and he'll 
 1. ~Figure out how to run `npm start` on system boot~ ✅ Done!
 2. Don't hard-code IP address in the listen command
 3. Route node-started `radiate` process stdio to append to /home/pkc/radiateserver.log
+4. Look into a new feature: "Add X for the next week, but then remove it"
