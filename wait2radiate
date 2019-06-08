@@ -1,0 +1,9 @@
+#!/bin/bash
+
+function doIt() {
+    sleep 5
+
+    radiate
+}
+
+doIt > /home/pkc/radiateserver.log 2>&1

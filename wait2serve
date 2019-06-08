@@ -1,0 +1,12 @@
+#!/bin/bash
+
+function doIt() {
+    sleep 10
+
+    cd /home/pkc/info-radiator
+
+    npm install
+    npm start
+}
+
+doIt > /home/pkc/nodeserver.log 2>&1
