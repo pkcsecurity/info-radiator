@@ -8,10 +8,10 @@ Just drop it in [the `images` folder](https://github.com/jming422/info-radiator/
 **Note:** "Images" must be either png, jpg, gif, or pdf.
 
 ## How to add a webpage/app
-Edit [`launch-radiator.sh`](https://github.com/jming422/info-radiator/blob/master/launch-radiator.sh), and add your URL of choice to the initial value of the `things` array at the top. Entries are space-separated, no quotes required.
+Edit [`launch-radiator.sh`](https://github.com/jming422/info-radiator/blob/master/launch-radiator.sh), and add your URL of choice to the initial value of the `things` array at the top. Entries are newline-separated, no quotes required.
 
 ## How to restart/start/stop the radiator
-Visit [http://10.59.1.119:8080](http://10.59.1.119:8080) in your browser!
+Visit [http://10.59.1.119:8080](http://10.59.1.119:8080) in your browser! (Must be connected to PKC Security or PKC Security Bottom)
 
 ## What else can it do?
 Since this app is just automating Firefox via keystrokes, it can display anything Firefox can. You can add any resource URI that Firefox is capable of displaying to `things`, and it should "just work."
@@ -35,6 +35,6 @@ The PC has also been configured to automatically run `radiate` on system boot. N
 If you'd like SSH access to the PC, shoot a Slack message to Jonathan and he'll help get you set up!
 
 ### To-do List
-1. Figure out how to run `npm start` on system boot
+1. ~Figure out how to run `npm start` on system boot~ Done!
 2. Don't hard-code IP address in the listen command
-3. Node app should host over HTTPS
+3. Route node-started `radiate` process stdio to append to /home/pkc/radiateserver.log
