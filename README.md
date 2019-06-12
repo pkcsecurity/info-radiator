@@ -8,7 +8,7 @@ Just drop it in [the `images` folder](https://github.com/jming422/info-radiator/
 **Note:** "Images" must be either png, jpg, gif, or pdf.
 
 ## 🖥 How to add a webpage/app
-Edit [`launch-radiator.sh`](https://github.com/jming422/info-radiator/blob/master/launch-radiator.sh), and add your URL of choice to the initial value of the `things` array at the top. Entries are newline-separated, no quotes required.
+Edit [`launch-radiator.sh`](https://github.com/jming422/info-radiator/blob/master/launch-radiator.sh), and add your URL of choice to the initial value of the `things` array at the top. Entries are newline-separated, quotes required.
 
 ## 🚀 How to restart/start/stop the radiator
 Visit [http://10.59.1.119:8080](http://10.59.1.119:8080) in your browser! (Must be connected to PKC Security or PKC Security Bottom)
