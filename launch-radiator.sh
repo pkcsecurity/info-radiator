@@ -5,8 +5,6 @@ things=("https://pkc.io"
 	"https://give.imb.org"
 	"https://www.imb.org/give/projects/#give_projects_body"
 	"https://pkc.io/blog"
-	"https://vr-golfishing.herokuapp.com"
-	"https://www.hostedgraphite.com/6abb8f84/71fedf68-002a-4766-ba8e-74621882733e/grafana/playlists/play/3?inactive"
 	"https://invis.io/APRC3XGM83J#/362225257_Home")
 
 # Grab files from the images directory as well
