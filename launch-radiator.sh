@@ -5,6 +5,7 @@ things=("https://pkc.io"
 	"https://give.imb.org"
 	"https://www.imb.org/give/projects/#give_projects_body"
 	"https://pkc.io/blog"
+    "https://pkc.grafana.net/d/JNgtN9DWk/reveel-focus?orgId=1"
 	"https://invis.io/APRC3XGM83J#/362225257_Home")
 
 # Grab files from the images directory as well
