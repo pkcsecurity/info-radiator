@@ -19,7 +19,7 @@
   "homepage": "https://github.com/pkcsecurity/info-radiator#readme",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "tachyons": "^4.11.1"
